@@ -1,7 +1,7 @@
 Introduction
 ============
 
-''buildout.sanitycheck'' performs sanity checks on the buildout
+``buildout.sanitycheck`` performs sanity checks on the buildout
 environment, cancelling the buildout if continuing might
 be unwise.
 
