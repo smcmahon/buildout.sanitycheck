@@ -12,7 +12,7 @@ def check_root(buildout, logger):
     """ Refuse to run as root """
 
     if os.geteuid() == 0:
-        effective_user = buildout['buildout'].get('effective-user', 'nobody')
+        effective_user = buildout['buildout'].get('effective-user', 'plone')
         logger.error("""
 ***********************************************************
 Buildout should not be run while superuser. Doing so allows
