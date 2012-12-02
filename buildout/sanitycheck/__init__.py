@@ -12,7 +12,7 @@ def check_root(buildout, logger):
     """ Refuse to run as root """
 
     if os.geteuid() == 0:
-        effective_user = buildout['buildout'].get('effective-user', 'plone')
+        effective_user = buildout['buildout'].get('buildout-user', 'buildout_user')
         logger.error("""
 ***********************************************************
 Buildout should not be run while superuser. Doing so allows
@@ -23,7 +23,7 @@ Instead, you probably wish to do something like:
 %s
 ***********************************************************
 """ % (effective_user, disclaimer))
-        raise UserError('Attempt to give system ownership to Internet')
+        raise UserError('User attempt to give system ownership to Internet')
 
 
 def main(buildout):
