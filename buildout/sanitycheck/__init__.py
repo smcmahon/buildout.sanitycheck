@@ -18,7 +18,7 @@ def check_root(buildout, logger):
 Buildout should not be run while superuser. Doing so allows
 untrusted code to be run as root.
 Instead, you probably wish to do something like:
-    sudu -u %s bin/buildout
+    sudo -u %s bin/buildout
 
 %s
 ***********************************************************
