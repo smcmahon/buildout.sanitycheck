@@ -1,7 +1,12 @@
 Changelog
 =========
 
-1.0dev (unreleased)
+1.0.1 2015-06-16
+----------------
+
+- Fix typo: "sudu" --> "sudo"
+
+1.0
 -------------------
 
 - Initial release
